@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="script.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="header.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Concerts</title>
+</head>
+
+
+
+<header class="appear2">
+    <div id="wrapp_nav">
+        <div class="header_item">
+            <a id="nav_home" href="#">Home</a>
+        </div>        
+        <div class="header_item">
+            <a id="nav_concert" href="tour.html">Concert</a>
+        </div>        
+        <div class="header_item">
+            <a id="nav_music" href="music.html">Music</a>
+      </div>
+        <div class="header_item">
+            <a id="nav_hdwgt" href="#">HDWGT</a>
+      </div>
+
+    </div>
+</header>
+
+
+
+
+<body>
+
+    <section id="NextDate">
+
+        <div>
+
+            <h1 class="appear2">
+                NOTRE PROCHAINE DATE
+            </h1>
+
+            <div class="elipse appear2">
+
+                <picture>
+                    <source srcset="Aff1.svg"
+                            media="(orientation: portrait)">
+                    <img src="Aff1.svg" alt="" class="center">
+                </picture>
+
+            </div>
+                    
+
+
+        </div>
+
+
+
+    </section>
+
+    <section id="OtherDates">
+
+        <div>
+
+            <h1 class="appear2">
+                NOS AUTRES DATES
+            </h1>
+
+         
+
+
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="mf1.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Stade De France</h5>
+                    <p>30 Juillet 2022</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="mp1.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Stade De France</h5>
+                    <p>30 Juillet 2022</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="mp1.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Stade De France</h5>
+                    <p>30 Juillet 2022</p>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              </a>
+              </div>
+              </div>
+              
+            
+
+
+
+
+    </section>
+
+
+    <section id="Form" >
+
+        <div>
+
+            <h1 class="appear2">
+                TU VEUX NOUS BOOKER ?
+            </h1>
+
+            <div class="container center2 appear2">
+                <form onsubmit="alert('Merci pour ta demande !')">
+                  
+                  <input class="inputtext" id="prenom" type="text" placeholder="Prénom *" required><br>
+                  <input class="inputtext" id="nom" type="text" placeholder="Nom *" required><br>
+                  <input class="inputtext" id="mail" type="email" placeholder="Email *" required><br>
+                  
+                  <div class="choices">
+
+                    <p id="titrechoix">Type de demande :</p>
+
+                    <p class="pchoice"><input type="radio" id="private" name="reason" value="private">
+                        <label for="private">Concert privé</label></p>
+                        <p  class="pchoice"><input type="radio" id="public" name="reason" value="public">
+                        <label for="public">Concert public</label></p>
+                      <p  class="pchoice"><input type="radio" id="barm" name="reason" value="barm">
+                        <label for="barm">Barmitsvah</label></p>
+
+
+                  </div>
+                  
+
+                    <div>
+
+                        <textarea id="exp" minlength="50" name="expl" cols="40" rows="5" placeholder="Explique nous ton projet ! *" required></textarea>
+    
+                      </div>
+
+                  <input class="inputtext" type="submit" value="Envoyer" ><br>
+                  
+                      <p id="result" class="text2"></p>
+
+
+                </form>
+
+                </div>
+
+
+        </div>
+
+
+        
+
+
+
+      
+
+
+
+    </section>
+
+
+
+    
+    
+</body>
+
+
+
+
+<footer>
+
+
+
+
+
+
+</footer>
+
+
+
+
+
+</html>

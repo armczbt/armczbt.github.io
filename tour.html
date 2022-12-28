@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="css/styleconcert.css"> 
+    <link rel="stylesheet" href="css/header.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <title>Concerts</title>
+</head>
+
+
+
+<header class="appear2">
+    <div id="wrapp_nav">
+        <div class="header_item">
+            <a id="nav_home" href="#">Home</a>
+        </div>        
+        <div class="header_item">
+            <a id="nav_concert" href="tour.html">Concert</a>
+        </div>        
+        <div class="header_item">
+            <a id="nav_music" href="music.html">Music</a>
+      </div>
+        <div class="header_item">
+            <a id="nav_shop" href="shop.html">Shop</a>
+      </div>
+
+      <div class="header_item">
+        <a id="nav_hdwgt" href="#">HDWGT</a>
+    </div>
+
+    </div>
+</header>
+
+
+
+
+<body>
+
+    <section id="NextDate">
+
+        <div>
+
+            <h1 class="appear2">
+                NOTRE PROCHAINE DATE
+            </h1>
+
+            <div class="elipse appear2">
+
+                <picture>
+                    <source srcset="img/Aff1.svg"
+                            media="(orientation: portrait)">
+                    <img src="img/Aff1.svg" alt="" class="center">
+                </picture>
+
+            </div>
+                    
+
+
+        </div>
+
+
+
+    </section>
+
+    <section id="OtherDates">
+
+        <div>
+
+            <h1 class="appear2">
+                NOS AUTRES DATES
+            </h1>
+
+         
+
+
+            <div class="main-carousel appear2" data-flickity='{ "cellAlign": "center", "wrapAround": true, "freeScroll":false, "pauseAutoPlayOnHover": false }'>
+
+                <div class="carousel-cell">
+                    <br>
+                    <img src="img/mf1.png">
+                    <p><br>
+                    Festival de musique et arts rustix
+                    
+                    <br>
+                    26 Septembre 2023</p>
+                    <br>
+                    <br><p1 class="violet">Toulouse - FR</p1>
+                </div>
+
+                <div class="carousel-cell">
+                    <br>
+                    <img src="img/mp1.png">
+                    <p><br>
+                    Night Party Capitole
+                    
+                    <br>
+                    3 Avril 2022</p>
+                    <br>
+                    <br><p1 class="violet">Toulouse - FR</p1>
+                </div>
+
+                <div class="carousel-cell">
+                    <br>
+                    <img src="img/mp1.png">
+                    <p><br>
+                        Night Party Capitole
+                    
+                    <br>
+                    3 Avril 2022</p>
+                    <br>
+                    <br><p1 class="violet">Toulouse - FR</p1>
+                </div>
+                
+            </div>
+
+
+
+        </div>
+
+
+
+
+    </section>
+
+
+    <section id="Form" >
+
+        <div>
+
+            <h1 class="appear2">
+                TU VEUX NOUS BOOKER ?
+            </h1>
+
+            <div class="container center2 appear2">
+                <form onsubmit="alert('Merci pour ta demande !')">
+                  
+                  <input class="inputtext" id="prenom" type="text" placeholder="Prénom *" required><br>
+                  <input class="inputtext" id="nom" type="text" placeholder="Nom *" required><br>
+                  <input class="inputtext" id="mail" type="email" placeholder="Email *" required><br>
+                  
+                  <div class="choices">
+
+                    <p id="titrechoix">Type de demande :</p>
+
+                    <p class="pchoice"><input type="radio" id="private" name="reason" value="private">
+                        <label for="private">Concert privé</label></p>
+                        <p  class="pchoice"><input type="radio" id="public" name="reason" value="public">
+                        <label for="public">Concert public</label></p>
+                      <p  class="pchoice"><input type="radio" id="barm" name="reason" value="barm">
+                        <label for="barm">Barmitsvah</label></p>
+
+
+                  </div>
+                  
+
+                    <div>
+
+                        <textarea id="exp" minlength="50" name="expl" cols="40" rows="5" placeholder="Explique nous ton projet ! *" required></textarea>
+    
+                      </div>
+
+                  <input class="inputtext" type="submit" value="Envoyer" ><br>
+                  
+                      <p id="result" class="text2"></p>
+
+
+                </form>
+
+                </div>
+
+
+        </div>
+
+
+        
+
+
+
+      
+
+
+
+    </section>
+
+
+
+    
+    
+</body>
+
+
+
+
+<footer>
+
+
+    <p>2022 - Festiprod productions</p>
+
+
+
+</footer>
+
+
+
+
+
+</html>
