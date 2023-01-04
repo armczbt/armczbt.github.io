@@ -1,0 +1,131 @@
+html {
+    width: 100vw;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(54,4,45,1) 51%, rgba(0,0,0,1) 100%);
+    font-weight: bold;
+    width: 100vw;
+}
+
+
+#titre-princ {
+    background-color: transparent;
+    color: whitesmoke;
+    font-size: 50px;
+    font-style: 'DM Sans';
+    font-weight: 1000;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+
+
+.media-player {
+    background-color: transparent;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+#princpic {
+    margin: 40px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 20px 20px 0 0;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+    width: 28vw;
+}
+
+
+#princpic:hover {
+    background-color: rgba(255, 255, 255, 0.052);
+    transition: 1s;
+}
+
+#contr {
+    background-color: white;
+    margin-bottom: 50px;
+    width: 28vw;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    border-radius: 0 0 12px 12px;
+}
+
+#contr::-webkit-media-controls-panel {
+    background-color: white;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: rgba(0, 0, 0, 0.247);
+  border-radius: 50px;
+
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: #a0276e;
+    transition: 1.2s;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display
+ {
+    color: white;
+}
+
+
+audio::-webkit-media-controls-timeline {
+    background-color: rgba(0, 0, 0, 0.247);
+    border-radius: 20px;
+    margin-right: 50px;
+}
+
+audio::-webkit-media-controls-timeline:hover {
+    background-color: #a0276e;
+    transition: 1s;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    color: white;
+}
+
+#titre-autre {
+    background-color: transparent;
+    width: 100%;
+}
+
+#txt2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-style: 'DM Sans';
+    font-weight: 900;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+
+#other-music {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgplus {
+    width: 70%;
+    margin: 40px;
+}
+
+.imgplus:hover {
+    scale: 1.1;
+    transition: 1.2s;
+}
