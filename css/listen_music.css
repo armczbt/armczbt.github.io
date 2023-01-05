@@ -1,20 +1,66 @@
+html, body, div, span, applet, object, iframe, h1 h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------*/
+
+
+
 html {
     width: 100vw;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
     background: linear-gradient(318deg, rgba(2,0,36,1) 0%, rgba(54,4,45,1) 51%, rgba(0,0,0,1) 100%);
-    font-weight: bold;
+
     width: 100vw;
 }
 
 
 #titre-princ {
     background-color: transparent;
-    color: whitesmoke;
-    font-size: 50px;
-    font-style: 'DM Sans';
-    font-weight: 1000;
+    color: white;
+    
+    font-family: 'Anton';
+    font-size: 200%;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -30,6 +76,17 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+}
+
+
+
+.txt1{
+    padding: 6%;
+    font-family : Anton;
+    color: white;
+    text-align: center;
+    font-size: 300%;
+    
 }
 
 
@@ -105,9 +162,10 @@ audio::-webkit-media-controls-volume-slider {
 #txt2 {
     margin-top: 15px;
     margin-bottom: 10px;
-    font-style: 'DM Sans';
-    font-weight: 900;
-    font-size: 40px;
+    padding: 5%;
+    font-family: 'Anton';
+    
+    font-size: 300%;
     display: flex;
     justify-content: center;
     color: whitesmoke;
@@ -117,7 +175,7 @@ audio::-webkit-media-controls-volume-slider {
     background-color: transparent;
     display: flex;
     justify-content: center;
-
+    justify-items: center;
 }
 
 .imgplus {
@@ -129,3 +187,122 @@ audio::-webkit-media-controls-volume-slider {
     scale: 1.1;
     transition: 1.2s;
 }
+
+
+
+.appear2 {
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  
+  .appear2.inview2 {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+  
+  .appear2.inview2:nth-child(1) {
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  
+  .appear2.inview2:nth-child(2) {
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  
+  .appear2.inview2:nth-child(3) {
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+  }
+  
+  .appear2.inview2:nth-child(4) {
+    -webkit-transition-delay: 0.4s;
+            transition-delay: 0.4s;
+  }
+  
+  .appear2.inview2:nth-child(5) {
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
+  }
+
+
+  footer{
+
+
+    font-family: 'DM Sans';
+  font-weight: bold;
+  font-size:100%;
+  text-align: center;
+  padding: 7%;
+  
+  
+  
+  color: white;
+
+  }
+
+  .paroles{
+    font-family: 'DM Sans';
+  font-weight: bold;
+  font-size:100%;
+  text-align: center;
+  padding: 3%;
+  
+  
+  
+  color: white;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+    text-align: center;
+  }
+  
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .column p {
+    text-align: center;
+    font-family: 'DM Sans';
+  font-weight: bold;
+  font-size:100%;
+  color: white;
+  }
+  
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

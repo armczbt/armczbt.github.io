@@ -4,57 +4,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OurMusic</title>
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/listen_music.css">
-    <script src="/js_music/play_music.js"></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <title>Nos musiques - THREE DIRECTIONS</title>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js" defer></script>   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" defer></script>
+    <link rel="stylesheet" href="css/listen_music.css"> 
+    <link rel="stylesheet" href="css/headerV.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/logotd.ico">
+   
 </head>
 
-<header>
+<header class="appear2">
     <div id="wrapp_nav">
         <div class="header_item">
-            <a id="nav_home" href="index.html">Home</a>
-        </div>        
+            <a id="nav_home" href="index.html"><img id="home" alt="logoaccueil" src="img/logotd.png"></a>
+        </div>     
         <div class="header_item">
-            <a id="nav_concert" href="tour.html">Concert</a>
+            <a id="nav_concert" href="tour.html">Concerts</a>
         </div>        
         <div class="header_item">
             <a id="nav_music" href="music.html">Music</a>
       </div>
-      <div class="header_item">
-        <a id="nav_shop" href="shop.html">Shop</a>
-        </div>
         <div class="header_item">
-            <a id="nav_hdwgt" href="#">HDWGT</a>
+            <a id="nav_shop" href="shop.html">Shop</a>
       </div>
+     
+
+      
 
     </div>
 </header>
 <body>
 
 
-    <div id="titre-princ"><h2 id="txt1">Listen to our last song</h2></div>
-    <div class="media-player">
-        <img src="/img/albumcov5.jpg" alt="" id="princpic">
-        <audio src="/img/music1.mp3" controls id="contr"></audio>
+    <div id="titre-princ" class="appear2" >
+        <h2 id="txt1">ÉCOUTE NOTRE DERNIER SON !</h2></div>
+    <div class="media-player appear2">
+        <img src="img/Albtruck.png" alt="" id="princpic">
+        <audio src="img/camion.mp3" controls id="contr"></audio>
     </div>
 
+    <a href="https://genius.com/Three-directions-le-camion-lyrics" target="_blank">
+        <p class="paroles appear2" >Clique pour voir les paroles !</p>
+    </a> 
 
-    <div id="titre-autre"><h2 id="txt2">Discover our other songs...</h2></div>
-    <div id="other-music">
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/img/albumcov1.png" class="imgplus"> </a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/img/albumcov2.png" class="imgplus"> </a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="/img/albumcov3.png" class="imgplus"> </a>
-      </div>
 
-      
+    <div id="titre-autre" class="appear2"><h2 id="txt2">DÉCOUVRE AUSSI NOS ANCIENNES MUSIQUES :</h2></div>
+
+
+    <div class="row appear2">
+        <div class="column">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <img src="img/AlbPsy.png" class="imgplus">
+            </a>
+          <br>
+          <p>La Guitare Cosmique</p>
+          
+        </div>
+        <div class="column">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/AlbAlien.png"  class="imgplus"></a> 
+            <br>
+          <p>Aliens of rock</p>
+          </div>
+          <div class="column">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img src="img/AlbAni.png"  class="imgplus"></a>
+            <br>
+            <p>La nature, hein ?</p>
+          
+          </div>
+
+     
+    </div> 
     
 </body>
 
 <footer>
-    <h3>Hello im the</h3>
+
+
+    <p>2023 - Festiprod productions</p>
+
+
+
 </footer>
 </html>

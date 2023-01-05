@@ -1,0 +1,121 @@
+#Arms {
+    height: 100vh;
+    width : 100%;
+    display: flex;
+}
+
+#presentA {
+	color: bisque;
+	font-family: 'Anton';
+	display: flex;
+	flex-direction: column;
+	width : 75%;
+	height: 45%;
+	margin-top : 35vh;
+	margin-left : 12.5%;
+	top: 20%;
+	overflow: hidden;
+}
+
+#presentA > #NomArm {
+	font-size: 6vw;
+	z-index : 5;
+}
+
+#LineA {
+	margin-left : 5vw;
+}
+
+#descriptionA {
+	z-index : 5;
+	font-size : 1.8vh;
+}
+
+#Armimg {
+	z-index: 30;
+	width: 30vw;
+    border-radius: 40vh;
+}
+
+#imageA {
+	z-index : 30;
+	margin-top: 25vh;
+	margin-left: 10vw;
+}
+
+@media all and (max-width: 450px) {
+	#Arms {
+		flex-direction: column-reverse;
+	}
+
+	.left, .right {
+		z-index: 2;
+		width : 100%;
+		height: 50%;
+	}
+
+	#presentA {
+
+		width : 90%;
+		height: 90%;
+		margin-top : 2vh;
+		margin-left : 4%;
+		top: 20%;
+		overflow: hidden;
+	}
+
+	#descriptionA {
+		font-size : 1.6vh;
+	}
+
+	#imageA {	
+		z-index : 30;
+		margin-top: 10vh;
+		margin-left: 10vw;
+	}
+	
+	#Armimg {
+		z-index: 30;
+		width: 80vw;
+		border-radius: 30px;
+	}
+}
+
+@media all and (min-width: 450px) and (max-width: 784px) {
+	#Arms {
+		flex-direction: column-reverse;
+	}
+
+	.left, .right {
+		z-index: 2;
+		width : 100%;
+		height: 50%;
+	}
+
+	#presentA {
+
+		width : 90%;
+		height: 90%;
+		margin-top : 2vh;
+		margin-left : 4%;
+		top: 20%;
+		overflow: hidden;
+	}
+
+	#descriptionA {
+		font-size : 1.6vh;
+	}
+
+	#imageA {	
+		z-index : 30;
+		margin-top: 10vh;
+		margin-left: 25vw;
+	}
+	
+	#Armimg {
+		z-index: 30;
+		width : 50vw;
+		
+		border-radius: 30px;
+	}
+}
